@@ -1,6 +1,6 @@
 {
-  "type": "module",
   "name": "logo-generator",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
