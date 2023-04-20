@@ -1,9 +1,8 @@
-import inquirer from "inquirer";
-import fs from "fs";
-import { Circle, Triangle, Square } from "./test/shapes.js";
+const inquirer = require("inquirer");
+const fs = require("fs");
+const { Circle, Triangle, Square } = require("./test/shapes.js");
 
 function generateLogo(fileName, answers) {
-  console.log(answers);
   let svgString = "";
   svgString =
     '<svg version="1.1" width="200" height="200" xmlns="http://www.w3.org/2000/svg">';
@@ -27,7 +26,7 @@ function generateLogo(fileName, answers) {
   svgString += "</svg>";
 
   fs.writeFile(fileName, svgString, (error) => {
-    error ? console.log(error) : console.log("Generated your logo in logo.svg");
+    error ? console.log(error) : console.log("Generated your logo @ logo.svg");
   });
 }
 

@@ -21,8 +21,8 @@ class Square extends Shape {
 
 class Triangle extends Shape {
   render() {
-    return `<polygon points=" 10,190 100,10 190,190 " fill="${this.color}" />`;
+    return `<polygon points="10,190 100,10 190,190" fill="${this.color}" />`;
   }
 }
 
-export { Circle, Triangle, Square };
+module.exports = { Circle, Triangle, Square };
