@@ -1,7 +1,29 @@
 import inquirer from "inquirer";
 import { Circle, Triangle, Square } from "./test/shapes";
 
-function generateLogo(fineName, answers) {}
+function generateLogo(fineName, answers) {
+  let svgString = "";
+  svgString =
+    '<svg version="1.1" width="200" height="200" xmlns="http://www.w3.org/2000/svg">';
+  svgString += "<g>";
+  svgString += `${answers.shape}`;
+
+  let shapeChoice;
+  if (answers.shape === "Triangle") {
+    shapeChoice = new Triangle();
+    svgString += `<polygon points=" 10,190 100,10 190,190 " fill="${answers.shapeBackgroundColor}"/>`;
+  } else if (answers.shape === "Square") {
+    shapeChoice = new Square();
+    svgString += `<rect x="10" y="10" width="190" height="190" fill="${answers.shapeBackgroundColor}"/>`;
+  } else {
+    shapeChoice = new Circle();
+    svgString += `<circle cx="100" cy="100" r="95" fill="${answers.shapeBackgroundColor}"/>`;
+  }
+
+  svgString += `<text x="100" y="100" text-anchor="middle" font-size="30" fill="${answers.charactersColor}">${answers.text}</text>`;
+  svgString += "</g>";
+  svgString += "</svg>";
+}
 
 function askQuestions() {}
 inquirer
