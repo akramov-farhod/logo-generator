@@ -8,8 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^9.1.5"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }
