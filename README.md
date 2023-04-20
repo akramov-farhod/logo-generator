@@ -8,7 +8,7 @@ SVG Logo Generator
 
 <details>
 
-Video
+![logo_gen](https://user-images.githubusercontent.com/123986533/233287557-05e161dd-1e44-41e1-9558-770abad80e7a.gif)
 
 </details>
 
