@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const { Circle, Triangle, Square } = require("./test/shapes.js");
+const { Circle, Triangle, Square } = require("./lib/shapes.js");
 
 function generateLogo(fileName, answers) {
   let svgString = "";
