@@ -1,4 +1,7 @@
 import inquirer from "inquirer";
+import { Circle, Triangle, Square } from "./test/shapes";
+
+function generateLogo(fineName, answers) {}
 
 function askQuestions() {}
 inquirer
